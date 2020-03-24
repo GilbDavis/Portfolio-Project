@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-family;
+}
+
+.hero {
+  background-image: url('../images/blur-close-up-code-computer-546819-compressor.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    
+  }
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+}
+
+// Navegacion - Barra superior
+.navigation__container {
+  width: 100%;
+  height: 100%;
+  // background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-container {
+    margin-left: 2em;
+    color: white;
+  }
+
+  .menu_nav {
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        padding: 0 2em;
+        font-size: 2rem;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
