@@ -1,19 +1,21 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+const autoPrefixer = require('gulp-autoprefixer');
 
 function css() {
-  return gulp
-    .src('scss/app.scss')
-    .pipe(autoprefixer())
-    .pipe(sass({ outputStyle: "expanded" }))
-    .pipe(gulp.dest("css"));
+  return gulp.src('scss/app.scss')
+    .pipe(sass({
+      outputStyle: 'compressed',
+    }))
+    .pipe(autoPrefixer('last 2 versions'))
+    .pipe(gulp.dest('css'));
 }
+
 function watchFiles() {
   gulp.watch('scss/*.scss', css);
   gulp.watch('index.html');
 }
 
-// tasks
+//Registrar funciones como tarea
 gulp.task('css', css);
-gulp.task("watch", gulp.parallel(watchFiles));
+gulp.task('watch', watchFiles);
