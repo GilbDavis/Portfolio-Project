@@ -2,59 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Davis Testing | The best site of Css3</title>
-  <link rel="stylesheet" type="text/css" href="./css/app.css">
+  <link rel="stylesheet" type="text/css" href="./css/app.css" />
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff"> <!-- Final de favicon -->
-  <script src="https://kit.fontawesome.com/a63647437e.js" crossorigin="anonymous"></script> <!-- Font awesome -->
-
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Final de favicon -->
+  <script src="https://kit.fontawesome.com/a63647437e.js" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
 </head>
 
 <body>
-
   <div class="hero">
     <h2 id="typeWritter"></h2>
-    <br>
+    <br />
     <a class="action-button" href="">See my work <i class="fas fa-arrow-right"></i></a>
   </div>
 
   <header id="Home" class="header">
-
     <div class="navigation__container">
       <div class="logo-container">
-        <img class="logotipo" src="./images/GD-Logo.png">
+        <img class="logotipo" alt="Logo" src="./images/GD-Logo.png" />
       </div>
 
       <div class="menu_nav">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Work</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
-    </div> <!-- Navigation__Container-->
+        <div class="button_container" id="toggle">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
 
+        <div class="overlay" id="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation__Container-->
   </header>
 
   <section>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
   </section>
-
-
 </body>
 
 <script src="./JS/Animation/heroAnimation.js"></script>
+<script src="./JS/Animation/toggleHamburger.js"></script>
 
 </html>
