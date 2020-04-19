@@ -13,6 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: $font-family;
+  line-height: 1.42857143;
 }
 
 .hero {
@@ -189,7 +190,7 @@ body {
         transition: opacity .25s ease;
 
         @include mobile {
-          top: 1.6em;
+          top: 2em;
           font-size: medium;
         }
 
@@ -340,5 +341,94 @@ body {
     }
 
     //Final del hamburger
+  }
+}
+
+// Seccion sobre mi
+
+.AboutContainer {
+  width: 100%;
+  height: 1120px;
+  background-color: $white;
+  margin-bottom: 6em;
+
+  // Header
+  .heading_About {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5em;
+
+    h2 {
+      font-size: 3.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 2em 0 0 0;
+    }
+
+    hr {
+      margin-top: .6em;
+      border-bottom: 2px solid $naranja;
+      width: 20em;
+    }
+  }
+
+  // Seccion about me
+  .AboutMe_Content {
+    width: 100%;
+
+    .flexContainer {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 5em;
+
+      .profile-Image {
+        max-width: 100%;
+        width: 30vw;
+        border-radius: 50%;
+      }
+
+      .ContentSection {
+        width: 50%;
+
+        .mySection {
+
+          p {
+            font-weight: 400;
+          }
+
+          h2 {
+            font-size: 2.4rem;
+            font-weight: 300;
+
+            span {
+              font-weight: 700;
+            }
+          }
+
+          .downloadLink {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            font-weight: 700;
+            padding: 1em 2em;
+            transition: background-color .3s ease;
+            border-radius: 5px;
+            background: linear-gradient(to right, $naranja 50%, $negro 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .5s ease-out;
+
+            &:hover {
+              background-position: left bottom;
+            }
+          }
+        }
+      }
+    }
   }
 }
