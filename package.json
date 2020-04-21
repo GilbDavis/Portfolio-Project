@@ -21,6 +21,8 @@
   "browserslist": [
     "last 3 versions",
     ">1%"
-
-  ]
+  ],
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  }
 }
