@@ -120,15 +120,14 @@ body {
 }
 
 .scrolled {
-  position: fixed !important;
   background-color: $negro;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
 .header {
   width: 100%;
-  height: 6.5%;
-  position: absolute;
+  height: 7%;
+  position: fixed;
   top: 0;
   transition: background-color .3s ease;
   background-color: none;
@@ -163,7 +162,7 @@ body {
 
     .logotipo {
       height: 100%;
-      width: 40%;
+      width: 35%;
 
       @include tablet {
         width: 35%;
@@ -455,6 +454,7 @@ body {
           h2 {
             font-size: 2.4rem;
             font-weight: 300;
+
             @include mobile {
               align-self: center;
             }
