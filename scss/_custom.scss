@@ -30,6 +30,10 @@ body {
   justify-content: center;
   flex-direction: column;
 
+  @include tablet {
+    background-image: url('../images/hero-mobile.jpg');
+  }
+
   .action-button {
     text-decoration: none;
     color: $white;
@@ -133,7 +137,7 @@ body {
   background-color: none;
 
   @include mobile {
-    height: 8%;
+    height: 9%;
   }
 }
 

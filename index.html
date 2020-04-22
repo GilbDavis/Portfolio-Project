@@ -31,7 +31,7 @@
     <div class="navigation__container">
 
       <div class="logo-container">
-        <img class="logotipo" alt="Logo" src="./images/GD-Logo.png" />
+        <a href="/"><img class="logotipo" alt="Logo" src="./images/GD-Logo.png" /></a>
       </div>
 
       <div class="menu_nav">
@@ -65,7 +65,10 @@
 
     <div class="AboutMe_Content">
       <div class="flexContainer">
-        <img class="profile-Image" src="./images/profile.jpg" alt="Profile Pic">
+        <picture>
+          <source type="image/jpg" srcset="./images/profile-mobile.jpg" media="(max-width: 1024px)">
+          <img class="profile-Image" src="./images/profile.jpg" alt="Profile Pic">
+        </picture>
         <div class="ContentSection">
           <div class="mySection">
             <h2>Who <span>Am</span> i?</h2>
