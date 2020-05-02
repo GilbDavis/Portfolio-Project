@@ -544,6 +544,10 @@ body {
   justify-content: center;
   color: $white;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .Skill_Content {
     flex: 0 0 25%;
     margin: 0.5em;
