@@ -132,6 +132,7 @@ body {
   width: 100%;
   height: 7%;
   position: fixed;
+  z-index: 9999;
   top: 0;
   transition: background-color .3s ease;
   background-color: none;
@@ -488,6 +489,81 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+// skill container section
+.skills_Container {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url('../images/skills-bg.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:before {
+    content: '';
+    background-color: $negro;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .Skill_Heading {
+    margin-top: 3.6em;
+
+    h1 {
+      font-size: 3.6rem;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    hr {
+      margin: 0 auto;
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+      width: 20em;
+      border-bottom: 2px solid $naranja;
+    }
+  }
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .Skill_Content {
+    flex: 0 0 25%;
+    margin: 0.5em;
+    margin-top: 3em;
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-weight: normal;
+    }
+
+    img {
+      width: 15%;
+      padding-bottom: 0.3em;
+      color: $white;
     }
   }
 }
