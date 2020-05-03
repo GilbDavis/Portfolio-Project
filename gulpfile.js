@@ -3,17 +3,17 @@ const sass = require('gulp-sass');
 const autoPrefixer = require('gulp-autoprefixer');
 
 function css() {
-  return gulp.src('scss/app.scss')
+  return gulp.src('src/scss/app.scss')
     .pipe(sass({
       outputStyle: 'compressed',
     }))
     .pipe(autoPrefixer('last 2 versions'))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('src/css'));
 }
 
 function watchFiles() {
-  gulp.watch('scss/*.scss', css);
-  gulp.watch('index.html');
+  gulp.watch('src/scss/*.scss', css);
+  gulp.watch('src/index.html');
 }
 
 //Registrar funciones como tarea

@@ -67,7 +67,7 @@
       <div class="flexContainer">
         <picture>
           <source type="image/jpg" srcset="./images/profile-mobile.jpg" media="(max-width: 1024px)">
-          <img class="profile-Image" src="./images/profile.jpg" alt="Profile Pic">
+          <img class="profile-Image lozad" data-src="./images/profile.jpg" alt="Profile Pic">
         </picture>
         <div class="ContentSection">
           <div class="mySection">
@@ -99,38 +99,38 @@
   </section>
 
   <!-- Seccion de habilidades/Que tengo para ofrecer al mercado -->
-  <section class="skills_Container">
+  <section class="skills_Container lozad" data-background-image="./images/skills-bg.jpg">
     <div class="Skill_Heading">
       <h1>What i Do</h1>
       <hr>
     </div>
     <div class="Container">
       <div class="Skill_Content">
-        <img src="./images/icons/responsive.svg" alt="responsive icon">
+        <img class="lozad" data-src="./images/icons/responsive.svg" alt="responsive icon">
         <h3>Responsive Design</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Develope of attractive solutions for any device.
         </p>
       </div>
       <div class="Skill_Content">
-        <img src="./images/icons/frontend.svg" alt="FrontEnd icon">
+        <img class="lozad" data-src="./images/icons/frontend.svg" alt="FrontEnd icon">
         <h3>FrontEnd</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Vanilla JavaScript, React/Redux, JQuery, etc.
         </p>
       </div>
       <div class="Skill_Content">
-        <img src="./images/icons/backend.svg" alt="Backend icon">
+        <img class="lozad" data-src="./images/icons/backend.svg" alt="Backend icon">
         <h3>BackEnd</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          NodeJS (Express), RESTful API's, SQL/MongoDB, AWS (S3, EC2, RDS)
         </p>
       </div>
       <div class="Skill_Content">
-        <img src="./images/icons/best_practice.svg" alt="Best Practice icon">
-        <h3>Best Practices</h3>
+        <img class="lozad" data-src="./images/icons/performance.svg" alt="Best Practice icon">
+        <h3>Perfomance</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          How fast is a website is critical for a good user experience.
         </p>
       </div>
       <!-- <div class="Skill_Content">
@@ -141,19 +141,16 @@
         </p>
       </div> -->
       <div class="Skill_Content">
-        <img src="./images/icons/user_experience.svg" alt="UX icon">
+        <img class="lozad" data-src="./images/icons/user_experience.svg" alt="UX icon">
         <h3>UI / UX</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Effectively apply interface and user experience designs.
         </p>
       </div>
     </div>
   </section>
 
-  <script src="./JS/Animation/toggleHamburger.js"></script>
-  <script src="./JS/Animation/headerBackgroundChange.js"></script>
-  <script src="./JS/Animation/changeActiveMenu.js"></script>
-  <script type="module" src="./JS/smoothScroll.js"></script>
+  <script src="./public/bundle.js"></script>
 </body>
 
 </html>

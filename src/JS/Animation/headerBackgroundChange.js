@@ -1,4 +1,4 @@
-function myFunction() {
+export default function headerMenuBackgroundChange() {
   const header = document.getElementById('Home');
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.classList.add("scrolled");
@@ -6,5 +6,3 @@ function myFunction() {
     header.classList.remove("scrolled");
   }
 }
-
-window.onscroll = function () { myFunction() };
