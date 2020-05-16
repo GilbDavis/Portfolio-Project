@@ -4,6 +4,7 @@ import headerMenuBackgroundChange from './Animation/headerBackgroundChange';
 import toggleHamburger from './Animation/toggleHamburger';
 import lazyLoading from './utility/lazyLoading';
 import netlifyFormSendEmail from './utility/sendEmail';
+import '../css/app.css';
 
 smoothScrolling();
 changeActiveMenu();

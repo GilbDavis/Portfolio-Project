@@ -507,6 +507,10 @@ body {
   background-repeat: no-repeat;
   overflow: auto;
 
+  @include mobile {
+    
+  }
+
   &:before {
     content: '';
     background-color: $negro;

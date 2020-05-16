@@ -7,16 +7,15 @@
   <title>Gilberto Davis | Web Developer</title>
   <link rel="stylesheet" type="text/css" href="./css/app.css" />
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./images/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="${require(`./images/favicon/apple-touch-icon.png`)}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="${require(`./images/favicon/favicon-32x32.png`)}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="${require(`./images/favicon/favicon-16x16.png`)}" />
+  <link rel="mask-icon" href="${require(`./images/favicon/safari-pinned-tab.svg`)}" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- Final de favicon -->
   <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/a63647437e.js" rel="noreferrer noopener" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a63647437e.js" ref="noreferrer noopener" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -66,7 +65,7 @@
     <div class="AboutMe_Content">
       <div class="flexContainer">
         <picture>
-          <source type="image/jpg" srcset="./images/profile-mobile.jpg" media="(max-width: 1024px)">
+          <source type="image/jpg" srcset="${require(`./images/profile-mobile.jpg`)}" media="(max-width: 1024px)">
           <img class="profile-Image lozad" data-src="./images/profile.jpg" alt="Profile Pic">
         </picture>
         <div class="ContentSection">
