@@ -5,8 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development"
+    "build": "webpack --config ./webpack.config.js --mode production",
+    "dev": "webpack --config ./webpack.dev.js --mode development"
   },
   "keywords": [
     "test",
@@ -42,6 +42,6 @@
   ],
   "dependencies": {
     "jump.js": "^1.0.2",
-    "lozad": "^1.14.0"
+    "vanilla-lazyload": "^16.0.0"
   }
 }

@@ -4,7 +4,9 @@ import headerMenuBackgroundChange from './Animation/headerBackgroundChange';
 import toggleHamburger from './Animation/toggleHamburger';
 import lazyLoading from './utility/lazyLoading';
 import netlifyFormSendEmail from './utility/sendEmail';
+// Habilitar el import css para build de produccion
 import '../css/app.css';
+
 
 smoothScrolling();
 changeActiveMenu();

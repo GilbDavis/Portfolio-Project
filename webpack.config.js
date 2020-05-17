@@ -38,7 +38,7 @@ module.exports = {
         test: /\.html$/i,
         loader: 'html-loader',
         options: {
-          attrs: [":data-src", "img:src", ":data-srcset", ":srcset", ":data-background-image"],
+          attrs: [":data-src", "img:src", ":data-srcset", ":srcset", ":data-bg"],
           esModule: false,
           interpolate: true
         }

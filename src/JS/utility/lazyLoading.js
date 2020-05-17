@@ -1,7 +1,9 @@
 export default function lazyLoading() {
 
-  const lozad = require('lozad');
-  const observer = lozad();
-
-  observer.observe();
+  const LazyLoad = require('vanilla-lazyload');
+  const lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ... more custom settings?
+  });
+  lazyLoadInstance.update();
 }

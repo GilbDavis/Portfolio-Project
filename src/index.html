@@ -65,8 +65,8 @@
     <div class="AboutMe_Content">
       <div class="flexContainer">
         <picture>
-          <source type="image/jpg" srcset="${require(`./images/profile-mobile.jpg`)}" media="(max-width: 1024px)">
-          <img class="profile-Image lozad" data-src="./images/profile.jpg" alt="Profile Pic">
+          <source type="image/jpg" data-srcset="./images/profile-mobile.jpg" media="(max-width: 1024px)">
+          <img class="profile-Image lazy" data-src="./images/profile.jpg" alt="Profile Pic">
         </picture>
         <div class="ContentSection">
           <div class="mySection">
@@ -101,35 +101,35 @@
   </section>
 
   <!-- Seccion de habilidades/Que tengo para ofrecer al mercado -->
-  <section class="skills_Container lozad" data-background-image="./images/skills-bg.jpg">
+  <section class="skills_Container lazy" data-bg="./images/skills-bg.jpg">
     <div class="Skill_Heading">
       <h1>What i Do</h1>
       <hr>
     </div>
     <div class="Container">
       <div class="Skill_Content">
-        <img class="lozad" data-src="./images/icons/responsive.svg" alt="responsive icon">
+        <img class="lazy" data-src="./images/icons/responsive.svg" alt="responsive icon">
         <h3>Responsive Design</h3>
         <p>
           Develope of attractive solutions for any device.
         </p>
       </div>
       <div class="Skill_Content">
-        <img class="lozad" data-src="./images/icons/frontend.svg" alt="FrontEnd icon">
+        <img class="lazy" data-src="./images/icons/frontend.svg" alt="FrontEnd icon">
         <h3>FrontEnd</h3>
         <p>
           Vanilla JavaScript, React/Redux, JQuery, etc.
         </p>
       </div>
       <div class="Skill_Content">
-        <img class="lozad" data-src="./images/icons/backend.svg" alt="Backend icon">
+        <img class="lazy" data-src="./images/icons/backend.svg" alt="Backend icon">
         <h3>BackEnd</h3>
         <p>
           NodeJS (Express), RESTful API's, SQL/MongoDB, AWS (S3, EC2, RDS)
         </p>
       </div>
       <div class="Skill_Content">
-        <img class="lozad" data-src="./images/icons/performance.svg" alt="Best Practice icon">
+        <img class="lazy" data-src="./images/icons/performance.svg" alt="Best Practice icon">
         <h3>Perfomance</h3>
         <p>
           How fast is a website is critical for a good user experience.
@@ -143,7 +143,7 @@
         </p>
       </div> -->
       <div class="Skill_Content">
-        <img class="lozad" data-src="./images/icons/user_experience.svg" alt="UX icon">
+        <img class="lazy" data-src="./images/icons/user_experience.svg" alt="UX icon">
         <h3>UI / UX</h3>
         <p>
           Effectively apply interface and user experience designs.
@@ -201,7 +201,7 @@
             <textarea name="message" placeholder="Message" id="message" cols="30" rows="10" required></textarea>
           </div>
           <p id="sendMessage"></p>
-          <input type="submit" value="SUBMIT">
+          <input type="submit" value="Send a message">
         </form>
       </div>
     </div>
