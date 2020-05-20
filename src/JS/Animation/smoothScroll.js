@@ -3,7 +3,7 @@ export default function smoothScrolling() {
 
   // Links of the menu bar
   const homeLink = document.querySelectorAll(".links");
-  const arrayOfSectionsToScroll = ['#Hero', '#about', '', '']; // List of sections where homeLink has to scroll
+  const arrayOfSectionsToScroll = ['#Hero', '#about', '#Contact', '']; // List of sections where homeLink has to scroll
   // "See my work button"
   const actionButton = document.querySelector('.action-button');
 

@@ -14,6 +14,7 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- Final de favicon -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/a63647437e.js" ref="noreferrer noopener" crossorigin="anonymous"></script>
 </head>
@@ -45,8 +46,8 @@
             <ul>
               <li><a class="links" href="#Hero">Home</a></li>
               <li><a class="links" href="#about">About</a></li>
-              <li><a class="links" href="#">Work</a></li>
-              <li><a class="links" href="#">Contact</a></li>
+              <!-- <li><a class="links" href="#">Work</a></li> -->
+              <li><a class="links" href="#Contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -64,11 +65,11 @@
 
     <div class="AboutMe_Content">
       <div class="flexContainer">
-        <picture>
+        <picture data-aos="fade-down" data-aos-duration="1200">
           <source type="image/jpg" data-srcset="./images/profile-mobile.jpg" media="(max-width: 1024px)">
           <img class="profile-Image lazy" data-src="./images/profile.jpg" alt="Profile Pic">
         </picture>
-        <div class="ContentSection">
+        <div class="ContentSection" data-aos="fade-down-right" data-aos-duration="1000">
           <div class="mySection">
             <h2>Who <span>Am</span> i?</h2>
             <p>Gilberto Davis (born 1997, Panama) is an adventurer and a tech lover. He has been programming since the
@@ -76,14 +77,14 @@
               of 16 as a hobby driven by passion and the feeling of solving problems with a computer.
             </p>
             <p>
+              In 2017, he was a member of the winning team of the first Technological Scientific Fair held at the
+              headquarters of the University of Technology of Panama in Bocas del Toro.
+            </p>
+            <p>
               In 2018, he was awarded with the Cisco CCNA Routing and Switching certification for having successfully
               completed
               the course and in 2019 he graduated as an Engineering Technician with a Specialization in Software
               Development from the Technological University of Panama in the province of Bocas del Toro.
-            </p>
-            <p>
-              In 2017, he was a member of the winning team of the first Technological Scientific Fair held at the
-              headquarters of the University of Technology of Panama in Bocas del Toro.
             </p>
             <p>
               Gilberto is currently developing his undergraduate thesis and looking for an opportunity to improve his
@@ -103,32 +104,32 @@
   <!-- Seccion de habilidades/Que tengo para ofrecer al mercado -->
   <section class="skills_Container lazy" data-bg="./images/skills-bg.jpg">
     <div class="Skill_Heading">
-      <h1>What i Do</h1>
+      <h1 data-aos="fade-down" data-aos-duration="1000">What i Do</h1>
       <hr>
     </div>
     <div class="Container">
-      <div class="Skill_Content">
+      <div class="Skill_Content" data-aos="fade-down" data-aos-duration="1000">
         <img class="lazy" data-src="./images/icons/responsive.svg" alt="responsive icon">
         <h3>Responsive Design</h3>
         <p>
           Develope of attractive solutions for any device.
         </p>
       </div>
-      <div class="Skill_Content">
+      <div class="Skill_Content" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
         <img class="lazy" data-src="./images/icons/frontend.svg" alt="FrontEnd icon">
         <h3>FrontEnd</h3>
         <p>
           Vanilla JavaScript, React/Redux, JQuery, etc.
         </p>
       </div>
-      <div class="Skill_Content">
+      <div class="Skill_Content" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000">
         <img class="lazy" data-src="./images/icons/backend.svg" alt="Backend icon">
         <h3>BackEnd</h3>
         <p>
           NodeJS (Express), RESTful API's, SQL/MongoDB, AWS (S3, EC2, RDS)
         </p>
       </div>
-      <div class="Skill_Content">
+      <div class="Skill_Content" data-aos="fade-down" data-aos-delay="350" data-aos-duration="1000">
         <img class="lazy" data-src="./images/icons/performance.svg" alt="Best Practice icon">
         <h3>Perfomance</h3>
         <p>
@@ -142,7 +143,7 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div> -->
-      <div class="Skill_Content">
+      <div class="Skill_Content" data-aos="fade-down" data-aos-delay="450" data-aos-duration="1000">
         <img class="lazy" data-src="./images/icons/user_experience.svg" alt="UX icon">
         <h3>UI / UX</h3>
         <p>
@@ -152,7 +153,8 @@
     </div>
   </section>
 
-  <section id="Contact" class="Contact__Container">
+  <!-- Contact section start -->
+  <section id="Contact" class="Contact__Container ActiveSection">
     <div class="Contact__Form-Container">
       <div class="Social-Section">
         <div class="Contact-Title">
@@ -201,11 +203,22 @@
             <textarea name="message" placeholder="Message" id="message" cols="30" rows="10" required></textarea>
           </div>
           <p id="sendMessage"></p>
-          <input type="submit" value="Send a message">
+          <input type="submit" value="SUBMIT">
         </form>
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="socialMedia-Container">
+      <a href="https://github.com/GilbDavis" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/gilbertodavis/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/GilbDavis" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <p>Gilberto Davis&copy;. All Rights Reserved.</p>
+  </footer>
 
   <script src="./public/bundle.js"></script>
 </body>

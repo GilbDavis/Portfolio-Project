@@ -406,6 +406,8 @@ body {
       font-weight: 700;
       text-transform: uppercase;
       margin: 2em 0 0 0;
+
+      @include mobile {}
     }
 
     hr {
@@ -501,16 +503,11 @@ body {
   position: relative;
   z-index: 0;
   width: 100%;
-  // background-image: url("../images/skills-bg.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
-
-  @include tablet {
-    // background-image: url('../images/skills-bg-mobile.jpg');
-  }
 
   &:before {
     content: '';
@@ -575,6 +572,10 @@ body {
     img {
       width: 20%;
       padding-bottom: 0.3em;
+
+      @include mobile {
+        width: 15%;
+      }
     }
   }
 }
@@ -598,10 +599,6 @@ body {
           font-size: 3.6rem;
           font-weight: 700;
           text-transform: uppercase;
-
-          @include mobile {
-            font-size: 2.3rem;
-          }
         }
 
         p {
@@ -765,5 +762,51 @@ body {
         color: $white;
       }
     }
+  }
+}
+
+// Footer section
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $negro;
+
+  .socialMedia-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 55px;
+      height: 55px;
+      list-style: none;
+      margin: 2em 1em;
+      background-color: #404040;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        background-color: $celeste;
+        transform: scale(1.1);
+      }
+
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: $white;
   }
 }
