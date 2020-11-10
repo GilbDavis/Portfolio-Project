@@ -3,7 +3,7 @@ export default function smoothScrolling() {
 
   // Links of the menu bar
   const homeLink = document.querySelectorAll(".links");
-  const arrayOfSectionsToScroll = ['#Hero', '#about', '#Contact', '']; // List of sections where homeLink has to scroll
+  const arrayOfSectionsToScroll = ['#Hero', '#about', '#Portfolio', '#Contact']; // List of sections where homeLink has to scroll
   // "See my work button"
   const actionButton = document.querySelector('.action-button');
 
@@ -11,15 +11,15 @@ export default function smoothScrolling() {
     link.addEventListener('click', (event) => {
       if (arrayOfSectionsToScroll[index].length !== '') {
         jump(arrayOfSectionsToScroll[index], {
-          duration: index === 1 ? 1000 : 500,
-          offset: index === 1 ? -40 : 0
+          duration: index === 2 ? 1000 : 500,
+          offset: index === 2 ? -40 : 0
         });
       }
     });
   });
 
   actionButton.addEventListener('click', () => {
-    jump('#about', {
+    jump('#Portfolio', {
       duration: 1000
     });
   });

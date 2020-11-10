@@ -5,9 +5,10 @@ export default function toggleHamburger() {
   const bodyElement = document.getElementsByTagName('body')[0];
   const hamburgerMenuClose = document.querySelector('.button_container');
   const sectionLinks = document.querySelectorAll('.overlay-menu ul li a');
-  let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
   buttonToggle.addEventListener('click', function () {
+    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
     this.classList.toggle('active');
     overlay.classList.toggle('open');
 

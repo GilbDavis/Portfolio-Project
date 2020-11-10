@@ -7,14 +7,14 @@
   <title>Gilberto Davis | Web Developer</title>
   <link rel="stylesheet" type="text/css" href="./css/app.css" />
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="${require(`./images/favicon/apple-touch-icon.png`)}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="${require(`./images/favicon/favicon-32x32.png`)}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="${require(`./images/favicon/favicon-16x16.png`)}" />
-  <link rel="mask-icon" href="${require(`./images/favicon/safari-pinned-tab.svg`)}" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- Final de favicon -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/a63647437e.js" ref="noreferrer noopener" crossorigin="anonymous"></script>
 </head>
@@ -24,14 +24,14 @@
     <h2 id="typeWritter">Hello there!<br>I'm <span id='name-highlight'>Gilberto Davis</span>, a full-stack Web
       &ltDeveloper/&gt.</h2>
     <br />
-    <a class="action-button" href="#about">See my work <i class="fas fa-arrow-right"></i></a>
+    <a class="action-button" href="#Portfolio">See my work <i class="fas fa-arrow-right"></i></a>
   </div>
 
   <header id="Home" class="header ActiveSection">
     <div class="navigation__container">
 
       <div class="logo-container">
-        <a href="/"><img class="logotipo" alt="Logo" src="./images/GD-Logo.png" /></a>
+        <a href="/"><img class="logotipo" alt="Logo" src="./images/GD-Logo_test.svg" /></a>
       </div>
 
       <div class="menu_nav">
@@ -46,7 +46,7 @@
             <ul>
               <li><a class="links" href="#Hero">Home</a></li>
               <li><a class="links" href="#about">About</a></li>
-              <!-- <li><a class="links" href="#">Work</a></li> -->
+              <li><a class="links" href="#Portfolio">Portfolio</a></li>
               <li><a class="links" href="#Contact">Contact</a></li>
             </ul>
           </nav>
@@ -119,7 +119,7 @@
         <img class="lazy" data-src="./images/icons/frontend.svg" alt="FrontEnd icon">
         <h3>FrontEnd</h3>
         <p>
-          Vanilla JavaScript, React/Redux, JQuery, etc.
+          HTML5, CSS3/SCSS, React/Redux, JQuery, etc.
         </p>
       </div>
       <div class="Skill_Content" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000">
@@ -130,10 +130,10 @@
         </p>
       </div>
       <div class="Skill_Content" data-aos="fade-down" data-aos-delay="350" data-aos-duration="1000">
-        <img class="lazy" data-src="./images/icons/performance.svg" alt="Best Practice icon">
-        <h3>Perfomance</h3>
+        <img class="lazy" data-src="./images/icons/estadisticas.svg" alt="Best Practice icon">
+        <h3>SEO</h3>
         <p>
-          How fast is a website is critical for a good user experience.
+          Getting your website to rank in search engines is one of my priorities.
         </p>
       </div>
       <!-- <div class="Skill_Content">
@@ -149,6 +149,54 @@
         <p>
           Effectively apply interface and user experience designs.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Portfolio" class="Portfolio__Section ActiveSection">
+    <div class="Portfolio__Container">
+      <div class="Portfolio__TitleSection">
+        <h2>Projects</h2>
+        <hr>
+      </div>
+
+      <div class="Portfolio__Categories">
+        <ul>
+          <li>All</li>
+          <li>ReactJS</li>
+          <li>JavaScript</li>
+          <li>NodeJS</li>
+        </ul>
+      </div>
+
+      <div class="Portfolio__ProjectsContainer">
+        <div class="mixed react">
+          <div class="card"></div>
+          <div class="text">
+            <h3>Bocas IoT Monitoring</h3>
+            <span class="highlight">React / NodeJS</span>
+            <button>Learn more</button>
+          </div>
+        </div>
+
+        <div class="mixed react">
+          <div class="card"></div>
+          <div class="text">
+            <h3>Testing</h3>
+            <span class="highlight">NodeJS</span>
+            <button>Learn more</button>
+          </div>
+        </div>
+
+        <div class="mixed react">
+          <div class="card"></div>
+
+          <div class="text">
+            <h3>Testing 2</h3>
+            <span class="highlight">React</span>
+            <button>Learn more</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -190,7 +238,7 @@
       </div>
 
       <div class="Contact-Section" id="EmailSection">
-        <form method="post" action="/#EmailSection" data-netlify="true">
+        <form method="post" action="/#EmailSection" data-netlify="true" name="EmailSection">
           <div class="Contact-Section__FirstRow">
             <div class="Input-Field">
               <input type="text" placeholder="Name" name="name" id="name" required>
@@ -214,7 +262,7 @@
       <a href="https://github.com/GilbDavis" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/gilbertodavis/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://twitter.com/GilbDavis" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/davis_0297/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
 
     <p>Gilberto Davis&copy;. All Rights Reserved.</p>

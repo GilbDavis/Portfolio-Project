@@ -7,13 +7,13 @@ export default function netlifyFormSendEmail() {
     event.preventDefault();
 
     const formData = new FormData(form);
-    fetch(form.getAttribute('actions'), {
+    fetch(form.getAttribute('action'), {
       method: 'POST',
       headers: {
         'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
       },
-      body: new URLSearchParams(formData.toString())
+      body: new URLSearchParams(formData).toString()
     })
       .then(res => {
         if (res) {
