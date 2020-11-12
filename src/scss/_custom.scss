@@ -611,19 +611,20 @@ body {
     width: 100%;
     margin-top: 5rem;
 
-    ul {
+    #buttonContainer {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: row;
       list-style: none;
 
-      li {
+      .filter {
         font-size: 1.7333rem;
         font-weight: bold;
-        padding: 0 4rem;
-        margin-left: 10rem;
+        padding: 0.3rem 4rem;
+        margin-left: 4rem;
         text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
 
         &:nth-of-type(1) {
           margin-left: 0;
@@ -631,6 +632,11 @@ body {
 
         &:hover {
           cursor: pointer;
+        }
+
+        &.activeFilter {
+          color: #fff;
+          background-color: #e57254;
         }
       }
     }
@@ -645,14 +651,24 @@ body {
     margin-bottom: 10rem;
 
     .mixed {
-      display: inline-flex;
+      visibility: hidden;
       position: relative;
+      opacity: 0;
       z-index: 1000;
-      width: 390px;
-      height: 300px;
+      width: 0;
+      height: 0;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      transition: all 600ms ease-in-out, opacity 600ms linear;
+
+      &.show {
+        display: inline-flex;
+        visibility: visible;
+        height: 300px;
+        width: 390px;
+        opacity: 1;
+      }
 
       &:hover {
         .text {
@@ -671,32 +687,43 @@ body {
         }
 
         & .card {
-          opacity: 0.2;
+          opacity: 0;
         }
       }
 
 
-      & .card:nth-of-type(1) {
+      &:nth-of-type(1) .card {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-image: url('../images/utpiot.png');
+        position: absolute;
+        background-position: center center;
+        background-size: cover;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &:nth-of-type(2) .card {
         position: absolute;
         height: 100%;
         width: 100%;
         z-index: -1;
         background-image: url('../images/test-img.jpg');
+        background-position: center center;
+        background-size: cover;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &:nth-of-type(3) .card {
         position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-image: url('../images/test2.jpg');
         background-position: center center;
         background-size: cover;
-      }
-
-      & .card:nth-of-type(2) {
-        background-image: url('../images/test-img.jpg');
-        background-position: center center;
-        background-size: cover;
-      }
-
-      & .card:nth-of-type(3) {
-        background-image: url('../images/test-img.jpg');
-        background-position: center center;
-        background-size: cover;
+        transition: opacity 0.3s ease-in-out;
       }
 
       .text {

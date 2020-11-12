@@ -59,8 +59,8 @@
   <!-- Contenedor de la seccion about -->
   <section id="about" class="AboutContainer ActiveSection">
     <div class="heading_About">
-      <h2>About Me</h2>
-      <hr />
+      <h2 data-aos="fade-right" data-aos-duration="1000">About Me</h2>
+      <hr data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" />
     </div>
 
     <div class="AboutMe_Content">
@@ -105,7 +105,7 @@
   <section class="skills_Container lazy" data-bg="./images/skills-bg.jpg">
     <div class="Skill_Heading">
       <h1 data-aos="fade-down" data-aos-duration="1000">What i Do</h1>
-      <hr>
+      <hr data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
     </div>
     <div class="Container">
       <div class="Skill_Content" data-aos="fade-down" data-aos-duration="1000">
@@ -156,16 +156,16 @@
   <section id="Portfolio" class="Portfolio__Section ActiveSection">
     <div class="Portfolio__Container">
       <div class="Portfolio__TitleSection">
-        <h2>Projects</h2>
-        <hr>
+        <h2 data-aos="fade-left" data-aos-duration="1000">Projects</h2>
+        <hr data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
       </div>
 
       <div class="Portfolio__Categories">
-        <ul>
-          <li>All</li>
-          <li>ReactJS</li>
-          <li>JavaScript</li>
-          <li>NodeJS</li>
+        <ul id="buttonContainer">
+          <li class="filter activeFilter" onclick="filterSelection('all')">All</li>
+          <li class="filter" onclick="filterSelection('react')">ReactJS</li>
+          <li class="filter" onclick="filterSelection('js')">JavaScript</li>
+          <li class="filter" onclick="filterSelection('node')">NodeJS</li>
         </ul>
       </div>
 
@@ -179,7 +179,7 @@
           </div>
         </div>
 
-        <div class="mixed react">
+        <div class="mixed node">
           <div class="card"></div>
           <div class="text">
             <h3>Testing</h3>
@@ -188,12 +188,11 @@
           </div>
         </div>
 
-        <div class="mixed react">
+        <div class="mixed js">
           <div class="card"></div>
-
           <div class="text">
             <h3>Testing 2</h3>
-            <span class="highlight">React</span>
+            <span class="highlight">Javascript</span>
             <button>Learn more</button>
           </div>
         </div>
@@ -269,6 +268,7 @@
   </footer>
 
   <script src="./public/bundle.js"></script>
+  <script src="./JS/Animation/filterProjects.js"></script>
 </body>
 
 </html>
