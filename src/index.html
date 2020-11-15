@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gilberto Davis | Web Developer</title>
+  <title>Gilberto Davis | Full-Stack Web Developer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/app.css" />
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
@@ -17,6 +19,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/a63647437e.js" ref="noreferrer noopener" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </head>
 
 <body>
@@ -160,7 +169,7 @@
         <hr data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
       </div>
 
-      <div class="Portfolio__Categories">
+      <div class="Portfolio__Categories" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
         <ul id="buttonContainer">
           <li class="filter activeFilter" onclick="filterSelection('all')">All</li>
           <li class="filter" onclick="filterSelection('react')">ReactJS</li>
@@ -169,13 +178,67 @@
         </ul>
       </div>
 
-      <div class="Portfolio__ProjectsContainer">
+      <div class="Modals_Container">
+        <div class="modal fade" id="project1_modal" tabindex="-1" role="dialog" aria-labelledby="Project 1"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="max-width: 700px;">
+            <div class="modal-content">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="width: 700px; height: 450px;">
+                    <img class="d-block w-100" src="./images/hero.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item" style="width: 700px; height: 450px;">
+                    <img class="d-block w-100" src="./images/utpiot.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item" style="width: 700px; height: 450px;">
+                    <img class="d-block w-100" src="./images/test-img.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="modal-header" style="flex-direction: column;">
+                <h1 class="modal-title" style="font-size: 2.9rem; font-weight: bold;">Bocas IoT Monitoring</h1>
+                <h1 class="modal-title" style="font-size: 1.46667rem; color: #c0c0c0; font-weight: bold;">Monitoring APP
+                </h1>
+              </div>
+              <div class="modal-body">
+                <p style="font-size: 1.6rem; margin-top: 1.5rem" ;>Bocas IoT Monitoring is a online platform focused on
+                  the monitoring of sensor data of the
+                  Technological University of Panama</p>
+              </div>
+              <div class="modal-footer border-top-0">
+                <a href="https://utpiotplatform.netlify.app/"
+                  style="padding: 1rem 2rem; font-size: 1.333rem; text-transform: uppercase;" target="_blank"
+                  class="btn btn-outline-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> View
+                  Site</a>
+                <a type="button" href="https://github.com/GilbDavis/UTP-IoT-Platform-FrontEnd" target="_blank"
+                  style="padding: 1rem 2rem; font-size: 1.333rem; text-transform: uppercase;"
+                  class="btn btn-outline-info btn-lg mr-auto"><i class="fas fa-code"></i> View
+                  Code</a>
+                <button type="button" style="font-size: 40px;" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Portfolio__ProjectsContainer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600">
         <div class="mixed react">
           <div class="card"></div>
           <div class="text">
             <h3>Bocas IoT Monitoring</h3>
             <span class="highlight">React / NodeJS</span>
-            <button>Learn more</button>
+            <button class="modal-opener" data-toggle="modal" data-target="#project1_modal">Learn more</button>
           </div>
         </div>
 
@@ -264,7 +327,7 @@
       <a href="https://www.instagram.com/davis_0297/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
 
-    <p>Gilberto Davis&copy;. All Rights Reserved.</p>
+    <p>Gilberto Davis &copy; 2020. All Rights Reserved.</p>
   </footer>
 
   <script src="./public/bundle.js"></script>

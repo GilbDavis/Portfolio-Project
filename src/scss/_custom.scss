@@ -192,6 +192,7 @@ body {
       ul {
         display: flex;
         list-style: none;
+        margin-bottom: 0;
 
         li {
           padding: 0 2em;
@@ -529,6 +530,7 @@ body {
       color: $white;
       text-transform: uppercase;
       text-align: center;
+      font-weight: bold;
     }
 
     hr {
@@ -597,6 +599,7 @@ body {
       font-size: 3.6rem;
       text-align: center;
       text-transform: uppercase;
+      font-weight: bold;
     }
 
     hr {

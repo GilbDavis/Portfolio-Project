@@ -8,11 +8,11 @@ export default function smoothScrolling() {
   const actionButton = document.querySelector('.action-button');
 
   homeLink.forEach((link, index) => {
-    link.addEventListener('click', (event) => {
+    link.addEventListener('click', () => {
       if (arrayOfSectionsToScroll[index].length !== '') {
         jump(arrayOfSectionsToScroll[index], {
           duration: index === 2 ? 1000 : 500,
-          offset: index === 2 ? -40 : 0
+          offset: index === 2 ? -40 : -50
         });
       }
     });
@@ -20,7 +20,8 @@ export default function smoothScrolling() {
 
   actionButton.addEventListener('click', () => {
     jump('#Portfolio', {
-      duration: 1000
+      duration: 1000,
+      offset: -40
     });
   });
 }
