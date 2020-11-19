@@ -10,11 +10,16 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto;
+}
+
 body {
   font-size: 1.6rem;
   font-family: $font-family;
   line-height: 1.42857143;
-  overflow-x: hidden !important;
 }
 
 .hero {
@@ -289,7 +294,7 @@ body {
         background: $color-main;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 0%;
         opacity: 0;
         visibility: hidden;
@@ -723,36 +728,26 @@ body {
           }
         }
 
-        & .card {
+        & .card__BackgroundIMG {
           opacity: 0;
         }
       }
 
-
-      &:nth-of-type(1) .card {
+      &:nth-of-type(1) .card__BackgroundIMG {
         height: 100%;
         width: 100%;
         z-index: -1;
-        background: url('../images/utpiot.png') center center/cover;
+        background: url('../images/utpiot.jpg') center center/cover;
         position: absolute;
         transition: opacity 0.3s ease-in-out;
       }
 
-      &:nth-of-type(2) .card {
+      &:nth-of-type(2) .card__BackgroundIMG {
         position: absolute;
         height: 100%;
         width: 100%;
         z-index: -1;
-        background: url('../images/test-img.jpg') center center/cover;
-        transition: opacity 0.3s ease-in-out;
-      }
-
-      &:nth-of-type(3) .card {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        background: url('../images/test2.jpg') center center/cover;
+        background: url('../images/instaLogin.jpg') center center/cover;
         transition: opacity 0.3s ease-in-out;
       }
 
